@@ -1,0 +1,19 @@
+title: Kernel module loaded
+id: 74f5fd4c-1341-58bf-a6f1-12fa1ddf5722
+status: stable
+description: sigdiff generated rule (kernel-module-load).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains:
+    - 'modprobe '
+    - 'insmod '
+    - "modprobe\t"
+  condition: selection
+level: high
+tags:
+- attack.T1547.006
+- attack.T1215

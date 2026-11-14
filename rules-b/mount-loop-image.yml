@@ -1,0 +1,16 @@
+title: Loop-mounted disk image (payload carrier pattern)
+id: 7214d2e2-33df-5600-9aa8-a6cedaaa0534
+status: stable
+description: sigdiff generated rule (mount-loop-image).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains: mount -o loop
+  condition: selection
+level: medium
+tags:
+- attack.T1083
+- attack.defense-evasion

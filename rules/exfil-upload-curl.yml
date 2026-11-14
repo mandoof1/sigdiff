@@ -1,0 +1,19 @@
+title: curl explicit file upload (-T/--upload-file)
+id: 6edaf345-39df-5b4e-8097-cb4573ba2e8b
+status: stable
+description: sigdiff generated rule (exfil-upload-curl).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains:
+    - curl -s -T
+    - curl -T
+    - curl --upload
+  condition: selection
+level: high
+tags:
+- attack.T1041
+- attack.T1567

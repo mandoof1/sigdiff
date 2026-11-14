@@ -1,0 +1,15 @@
+title: Kernel module unloaded
+id: f3a4c39a-38d4-5888-8bc0-c75d6c3d88e8
+status: stable
+description: sigdiff generated rule (kernel-module-unload).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains: 'rmmod '
+  condition: selection
+level: medium
+tags:
+- attack.T1547.006

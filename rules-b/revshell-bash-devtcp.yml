@@ -1,0 +1,16 @@
+title: Reverse shell via bash /dev/tcp redirection
+id: d5ab221d-2e22-529a-b71a-a3dee40d45e0
+status: stable
+description: sigdiff generated rule (revshell-bash-devtcp).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains: /dev/tcp/
+  condition: selection
+level: high
+tags:
+- attack.command-and-control
+- attack.T1059.004

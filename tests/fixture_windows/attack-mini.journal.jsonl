@@ -1,0 +1,6 @@
+{"__REALTIME_TIMESTAMP":"1700000101000000","SYSLOG_IDENTIFIER":"sshd","MESSAGE":"Accepted password for sigdiff-user from 203.0.113.10 port 40022 ssh2"}
+{"__REALTIME_TIMESTAMP":"1700000101100000","SYSLOG_IDENTIFIER":"sshd","MESSAGE":"pam_unix(sshd:session): session opened for user sigdiff-user(uid=1000) by (uid=0)"}
+{"__REALTIME_TIMESTAMP":"1700000101200000","SYSLOG_IDENTIFIER":"sudo","MESSAGE":"meowman : TTY=unknown ; PWD=/tmp/sigdiff-lab/work ; USER=root ; COMMAND=bash -c /tmp/sigdiff-lab/x.sh"}
+{"__REALTIME_TIMESTAMP":"1700000101300000","SYSLOG_IDENTIFIER":"systemd","UNIT":"sigdiff-lab-probe.service","MESSAGE":"Started sigdiff lab probe."}
+{"__REALTIME_TIMESTAMP":"1700000101400000","SYSLOG_IDENTIFIER":"systemd","UNIT":"sigdiff-lab-probe.service","MESSAGE":"sigdiff-lab-probe.service: Deactivated successfully."}
+{"__REALTIME_TIMESTAMP":"1700000101500000","SYSLOG_IDENTIFIER":"kernel","MESSAGE":"unrelated noise that the lab boundary drops"}

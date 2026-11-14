@@ -1,0 +1,17 @@
+title: Discovery of network configuration (ip/ifconfig)
+id: 7a9b2445-9c90-5fb4-b729-4008276f4245
+status: stable
+description: sigdiff generated rule (recon-ip-address).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains:
+    - ip addr
+    - ifconfig
+  condition: selection
+level: low
+tags:
+- attack.T1016

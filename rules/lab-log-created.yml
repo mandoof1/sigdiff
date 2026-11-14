@@ -1,0 +1,15 @@
+title: File created under /var/log/sigdiff-lab
+id: 6be1ad5b-2750-5b2f-a787-651ea2e750be
+status: stable
+description: sigdiff generated rule (lab-log-created).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_create
+detection:
+  selection:
+    TargetFilename|startswith: /var/log/sigdiff-lab/
+  condition: selection
+level: low
+tags:
+- attack.T1070

@@ -1,0 +1,17 @@
+title: Connect to the lab exfil channel 127.0.0.1:8099
+id: c828625a-1bf6-50c5-bd86-0aafc6e6a356
+status: stable
+description: sigdiff generated rule (lab-http-channel).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: network_connection
+detection:
+  sel_ip:
+    DestinationIP: 127.0.0.1
+  sel_port:
+    DestinationPort: '8099'
+  condition: sel_ip and sel_port
+level: low
+tags:
+- attack.T1041

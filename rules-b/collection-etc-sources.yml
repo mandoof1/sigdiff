@@ -1,0 +1,18 @@
+title: tar pointed at /etc configuration directly
+id: e162fa42-0908-5192-86c8-fe42bb0c4fb2
+status: stable
+description: sigdiff generated rule (collection-etc-sources).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  sel_tar:
+    CommandLine|contains: tar
+  sel_etc:
+    CommandLine|contains: ' /etc/'
+  condition: sel_tar and sel_etc
+level: medium
+tags:
+- attack.T1005
+- attack.T1039

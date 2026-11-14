@@ -1,0 +1,20 @@
+title: Data archived before exfiltration
+id: 3d8866ab-1eb4-5b25-a099-f820cfbf2c30
+status: stable
+description: sigdiff generated rule (archive-collected-data).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains:
+    - tar -c
+    - tar czf
+    - tar -czf
+    - 'zip '
+    - 'gzip '
+  condition: selection
+level: medium
+tags:
+- attack.T1560.001

@@ -1,0 +1,17 @@
+title: Lab systemd unit started
+id: d10ae0fd-c63c-57d2-a37a-9fa8007282bd
+status: stable
+description: sigdiff generated rule (lab-unit-started).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  service: systemd
+detection:
+  sel_unit:
+    Unit: sigdiff-lab-probe.service
+  sel_started:
+    Message|contains: Started
+  condition: sel_unit and sel_started
+level: medium
+tags:
+- attack.T1543.002

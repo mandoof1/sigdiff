@@ -1,0 +1,15 @@
+title: SSH session opened
+id: ece87290-df64-5940-b5cc-4738f2207e8a
+status: stable
+description: sigdiff generated rule (ssh-session-opened).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  service: sshd
+detection:
+  selection:
+    Action: session_opened
+  condition: selection
+level: medium
+tags:
+- attack.T1078.004

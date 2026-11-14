@@ -1,0 +1,32 @@
+type=SYSCALL msg=audit(1700000100.100:900): arch=c000003e syscall=59 success=yes exit=0 auid=1000 uid=1000 comm="bash" exe="/usr/bin/bash" key="sd"
+type=CWD msg=audit(1700000100.100:900): cwd="/tmp/sigdiff-lab/work"
+type=EXECVE msg=audit(1700000100.100:900): argc=3 a0="bash" a1="-c" a2="exec 3<>/dev/tcp/127.0.0.1/4444"
+type=PATH msg=audit(1700000100.100:900): item=0 name="/usr/bin/bash"
+type=SYSCALL msg=audit(1700000100.101:901): arch=c000003e syscall=42 success=no exit=-111 auid=1000 uid=1000 comm="bash" exe="/usr/bin/bash" key="sd"
+type=CWD msg=audit(1700000100.101:901): cwd="/tmp/sigdiff-lab/work"
+type=SOCKADDR msg=audit(1700000100.101:901): saddr=0200115C7F0000010000000000000000
+type=SYSCALL msg=audit(1700000100.200:902): arch=c000003e syscall=59 success=yes exit=0 auid=1000 uid=1000 comm="python3" exe="/usr/bin/python3.14" key="sd"
+type=CWD msg=audit(1700000100.200:902): cwd="/tmp/sigdiff-lab/work"
+type=EXECVE msg=audit(1700000100.200:902): argc=3 a0="python3" a1="-c" a2="import socket;s=socket.socket();s.connect(('127.0.0.1',1337))"
+type=PATH msg=audit(1700000100.200:902): item=0 name="/usr/bin/python3.14"
+type=SYSCALL msg=audit(1700000100.201:903): arch=c000003e syscall=42 success=no exit=-111 auid=1000 uid=1000 comm="python3" exe="/usr/bin/python3.14" key="sd"
+type=CWD msg=audit(1700000100.201:903): cwd="/tmp/sigdiff-lab/work"
+type=SOCKADDR msg=audit(1700000100.201:903): saddr=020005397F0000010000000000000000
+type=SYSCALL msg=audit(1700000100.300:904): arch=c000003e syscall=59 success=yes exit=0 auid=1000 uid=1000 comm="rm" exe="/usr/bin/rm" key="sd"
+type=CWD msg=audit(1700000100.300:904): cwd="/tmp/sigdiff-lab/work"
+type=EXECVE msg=audit(1700000100.300:904): argc=2 a0="rm" a1="/home/meowman/.bash_history"
+type=PATH msg=audit(1700000100.300:904): item=0 name="/usr/bin/rm"
+type=SYSCALL msg=audit(1700000100.301:905): arch=c000003e syscall=263 success=yes exit=0 auid=1000 uid=1000 comm="rm" exe="/usr/bin/rm" key="sd"
+type=CWD msg=audit(1700000100.301:905): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1700000100.301:905): item=0 name="/home/meowman/.bash_history" nametype=DELETE
+type=SYSCALL msg=audit(1700000100.400:906): arch=c000003e syscall=59 success=yes exit=0 auid=1000 uid=1000 comm="bash" exe="/usr/bin/bash" key="sd"
+type=CWD msg=audit(1700000100.400:906): cwd="/tmp/sigdiff-lab/work"
+type=EXECVE msg=audit(1700000100.400:906): argc=3 a0="bash" a1="-c" a2="unset HISTFILE"
+type=PATH msg=audit(1700000100.400:906): item=0 name="/usr/bin/bash"
+type=SYSCALL msg=audit(1700000100.500:907): arch=c000003e syscall=257 success=yes exit=3 auid=1000 uid=1000 comm="bash" exe="/usr/bin/bash" key="sd"
+type=CWD msg=audit(1700000100.500:907): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1700000100.500:907): item=0 name="/etc/ld.so.preload" nametype=CREATE
+type=SYSCALL msg=audit(1700000100.600:908): arch=c000003e syscall=263 success=yes exit=0 auid=1000 uid=1000 comm="rm" exe="/usr/bin/rm" key="sd"
+type=CWD msg=audit(1700000100.600:908): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1700000100.600:908): item=0 name="/etc/ld.so.preload" nametype=DELETE
+type=CONFIG_CHANGE msg=audit(1700000100.700:909): auid=1000 ses=1 op=add_rule key="sigdiff-temp" list=4 res=1

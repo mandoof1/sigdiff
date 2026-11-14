@@ -1,0 +1,18 @@
+title: HISTFILE emptied or history cleared in-shell
+id: 95ca0773-79e8-514b-98b2-29a73ba4bae1
+status: stable
+description: sigdiff generated rule (history-env-modified).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains:
+    - unset HISTFILE
+    - history -c
+    - HISTFILE=/dev/null
+  condition: selection
+level: medium
+tags:
+- attack.T1070.003

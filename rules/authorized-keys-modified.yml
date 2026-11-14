@@ -1,0 +1,15 @@
+title: SSH authorized_keys touched
+id: 582d3b95-449f-5b4d-b403-8739c236df3d
+status: stable
+description: sigdiff generated rule (authorized-keys-modified).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_modify
+detection:
+  selection:
+    TargetFilename|endswith: /authorized_keys
+  condition: selection
+level: high
+tags:
+- attack.T1098.004

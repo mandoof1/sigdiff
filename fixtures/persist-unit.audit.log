@@ -1,0 +1,545 @@
+type=SYSCALL msg=audit(1794681807.692:7262): arch=c000003e syscall=59 success=no exit=-2 a0=7fca6da16250 a1=7fca6da16270 a2=7ffe53ada420 a3=8 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="python3" exe="/usr/bin/python3.14" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=CWD msg=audit(1794681807.692:7262): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.692:7262): item=0 name="/home/meowman/.local/bin/bash" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1794681807.692:7262): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.692:7263): arch=c000003e syscall=59 success=no exit=-2 a0=7fca6cf39080 a1=7fca6da16270 a2=7ffe53ada420 a3=8 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="python3" exe="/usr/bin/python3.14" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=CWD msg=audit(1794681807.692:7263): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.692:7263): item=0 name="/home/meowman/.opencode/bin/bash" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1794681807.692:7263): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.692:7264): arch=c000003e syscall=59 success=no exit=-2 a0=7fca6da14e50 a1=7fca6da16270 a2=7ffe53ada420 a3=8 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="python3" exe="/usr/bin/python3.14" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=CWD msg=audit(1794681807.692:7264): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.692:7264): item=0 name="/opt/rocm/bin/bash" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1794681807.692:7264): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.692:7265): arch=c000003e syscall=59 success=no exit=-2 a0=7fca6da16170 a1=7fca6da16270 a2=7ffe53ada420 a3=8 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="python3" exe="/usr/bin/python3.14" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=CWD msg=audit(1794681807.692:7265): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.692:7265): item=0 name="/usr/local/bin/bash" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1794681807.692:7265): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.692:7266): arch=c000003e syscall=59 success=yes exit=0 a0=7fca6e528ab0 a1=7fca6da16270 a2=7ffe53ada420 a3=8 items=2 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="bash" exe="/usr/bin/bash" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=EXECVE msg=audit(1794681807.692:7266): argc=3 a0="bash" a1="-c" a2=7375646F202D532062617368202D6320277072696E74662027222722275B556E69745D5C6E4465736372697074696F6E3D73696764696666206C61622070726F62655C6E5B536572766963655D5C6E4578656353746172743D2F62696E2F736C6565702036305C6E2722272227203E202F6574632F73797374656D642F73797374656D2F736967646966662D6C61622D70726F62652E736572766963652026262073797374656D63746C206461656D6F6E2D72656C6F61642026262073797374656D63746C20737461727420736967646966662D6C61622D70726F62652E7365727669636520262620736C65657020302E352026262073797374656D63746C2073746F7020736967646966662D6C61622D70726F62652E7365727669636520262620726D202F6574632F73797374656D642F73797374656D2F736967646966662D6C61622D70726F62652E736572766963652026262073797374656D63746C206461656D6F6E2D72656C6F616427
+type=CWD msg=audit(1794681807.692:7266): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.692:7266): item=0 name="/usr/bin/bash" inode=626422 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681807.692:7266): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=623657 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.692:7266): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.694:7267): arch=c000003e syscall=59 success=yes exit=0 a0=55ec7d5c67d0 a1=55ec7d5c8360 a2=55ec7d5c7df0 a3=7f825be50ac0 items=2 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=EXECVE msg=audit(1794681807.694:7267): argc=5 a0="sudo" a1="-S" a2="bash" a3="-c" a4=7072696E746620275B556E69745D5C6E4465736372697074696F6E3D73696764696666206C61622070726F62655C6E5B536572766963655D5C6E4578656353746172743D2F62696E2F736C6565702036305C6E27203E202F6574632F73797374656D642F73797374656D2F736967646966662D6C61622D70726F62652E736572766963652026262073797374656D63746C206461656D6F6E2D72656C6F61642026262073797374656D63746C20737461727420736967646966662D6C61622D70726F62652E7365727669636520262620736C65657020302E352026262073797374656D63746C2073746F7020736967646966662D6C61622D70726F62652E7365727669636520262620726D202F6574632F73797374656D642F73797374656D2F736967646966662D6C61622D70726F62652E736572766963652026262073797374656D63746C206461656D6F6E2D72656C6F6164
+type=CWD msg=audit(1794681807.694:7267): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.694:7267): item=0 name="/usr/bin/sudo" inode=1217974 dev=00:23 mode=0104755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681807.694:7267): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=623657 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.694:7267): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.698:7268): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7b0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.698:7268): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.698:7268): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.698:7268): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.698:7268): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.698:7269): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.698:7269): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.698:7269): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.698:7269): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.698:7269): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.699:7270): arch=c000003e syscall=42 success=yes exit=0 a0=a a1=7ffe5b6ca7e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.699:7270): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.699:7270): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.699:7270): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.699:7270): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.699:7271): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7b0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.699:7271): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.699:7271): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.699:7271): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.699:7271): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.700:7272): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.700:7272): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.700:7272): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.700:7272): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.700:7272): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.700:7273): arch=c000003e syscall=42 success=yes exit=0 a0=a a1=7ffe5b6ca7e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.700:7273): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.700:7273): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.700:7273): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.700:7273): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.700:7274): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7b0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.700:7274): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.700:7274): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.700:7274): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.700:7274): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.700:7275): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.700:7275): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.700:7275): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.700:7275): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.700:7275): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.700:7276): arch=c000003e syscall=42 success=yes exit=0 a0=a a1=7ffe5b6ca7e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.700:7276): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.700:7276): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.700:7276): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.700:7276): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.700:7277): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7b0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.700:7277): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.700:7277): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.700:7277): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.700:7277): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.701:7278): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.701:7278): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.701:7278): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.701:7278): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.701:7278): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.701:7279): arch=c000003e syscall=42 success=yes exit=0 a0=a a1=7ffe5b6ca7e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.701:7279): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.701:7279): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.701:7279): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.701:7279): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.701:7280): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7b0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.701:7280): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.701:7280): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.701:7280): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.701:7280): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.701:7281): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.701:7281): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.701:7281): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.701:7281): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.701:7281): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.701:7282): arch=c000003e syscall=42 success=yes exit=0 a0=a a1=7ffe5b6ca7e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.701:7282): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.701:7282): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.701:7282): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.701:7282): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.701:7283): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7b0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.701:7283): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.701:7283): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.701:7283): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.701:7283): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.702:7284): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.702:7284): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.702:7284): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.702:7284): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.702:7284): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.702:7285): arch=c000003e syscall=42 success=yes exit=0 a0=a a1=7ffe5b6ca7e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.702:7285): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.702:7285): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.702:7285): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.702:7285): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.702:7286): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7b0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.702:7286): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.702:7286): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.702:7286): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.702:7286): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.702:7287): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.702:7287): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.702:7287): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.702:7287): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.702:7287): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.702:7288): arch=c000003e syscall=42 success=yes exit=0 a0=a a1=7ffe5b6ca7e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.702:7288): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.702:7288): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.702:7288): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.702:7288): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.702:7289): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7b0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.702:7289): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.702:7289): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.702:7289): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.702:7289): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.703:7290): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.703:7290): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.703:7290): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.703:7290): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.703:7290): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.703:7291): arch=c000003e syscall=42 success=yes exit=0 a0=a a1=7ffe5b6ca7e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.703:7291): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.703:7291): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.703:7291): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.703:7291): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.703:7292): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7b0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.703:7292): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.703:7292): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.703:7292): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.703:7292): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.703:7293): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.703:7293): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.703:7293): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.703:7293): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.703:7293): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.703:7294): arch=c000003e syscall=42 success=yes exit=0 a0=a a1=7ffe5b6ca7e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.703:7294): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.703:7294): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.703:7294): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.703:7294): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.703:7295): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7b0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.703:7295): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.703:7295): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.703:7295): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.703:7295): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.704:7296): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.704:7296): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.704:7296): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.704:7296): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.704:7296): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.704:7297): arch=c000003e syscall=42 success=yes exit=0 a0=a a1=7ffe5b6ca7e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.704:7297): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.704:7297): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.704:7297): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.704:7297): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.704:7298): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7b0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.704:7298): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.704:7298): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.704:7298): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.704:7298): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.704:7299): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7ffe5b6ca7e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.704:7299): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.704:7299): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.704:7299): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.704:7299): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.704:7300): arch=c000003e syscall=42 success=yes exit=0 a0=a a1=7ffe5b6ca7e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=1000 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="meowman" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.704:7300): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.704:7300): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.704:7300): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.704:7300): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.707:7301): arch=c000003e syscall=42 success=yes exit=0 a0=6 a1=5595c581f128 a2=1e a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=SOCKADDR msg=audit(1794681807.707:7301): saddr=01002F72756E2F646275732F73797374656D5F6275735F736F636B657400SADDR={ saddr_fam=local path=/run/dbus/system_bus_socket }
+type=CWD msg=audit(1794681807.707:7301): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.707:7301): item=0 name="/run/dbus/system_bus_socket" inode=3194 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.707:7301): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.708:7302): arch=c000003e syscall=59 success=yes exit=0 a0=7f0cf2b2304a a1=7ffe5b6cad20 a2=7f0cf2b26018 a3=0 items=2 ppid=27319 pid=27321 auid=1000 uid=0 gid=1000 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="unix_chkpwd" exe="/usr/bin/unix_chkpwd" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="root" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1794681807.708:7302): argc=3 a0="/usr/bin/unix_chkpwd" a1="meowman" a2="chkexpiry"
+type=CWD msg=audit(1794681807.708:7302): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.708:7302): item=0 name="/usr/bin/unix_chkpwd" inode=637393 dev=00:23 mode=0106755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681807.708:7302): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=623657 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.708:7302): proctitle=2F7573722F62696E2F756E69785F63686B707764006D656F776D616E0063686B657870697279
+type=USER_ACCT msg=audit(1794681807.709:7303): pid=27319 uid=1000 auid=1000 ses=1 msg='op=PAM:accounting grantors=pam_unix,pam_permit,pam_time acct="meowman" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'UID="meowman" AUID="meowman"
+type=SYSCALL msg=audit(1794681807.709:7304): arch=c000003e syscall=42 success=yes exit=0 a0=9 a1=7ffe5b6caaf0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=SOCKADDR msg=audit(1794681807.709:7304): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.709:7304): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.709:7304): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.709:7304): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.709:7305): arch=c000003e syscall=42 success=yes exit=0 a0=9 a1=7ffe5b6cab20 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=SOCKADDR msg=audit(1794681807.709:7305): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.709:7305): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.709:7305): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.709:7305): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.709:7306): arch=c000003e syscall=42 success=yes exit=0 a0=c a1=7ffe5b6cab20 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=SOCKADDR msg=audit(1794681807.709:7306): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.709:7306): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.709:7306): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.709:7306): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.709:7307): arch=c000003e syscall=42 success=yes exit=0 a0=7 a1=7f0cf37eb1a0 a2=6e a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=1000 euid=0 suid=0 fsuid=0 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="root" SUID="root" FSUID="root" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=SOCKADDR msg=audit(1794681807.709:7307): saddr=01002F6465762F6C6F6700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000SADDR={ saddr_fam=local path=/dev/log }
+type=CWD msg=audit(1794681807.709:7307): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.709:7307): item=0 name="/dev/log" inode=39 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.709:7307): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=CRED_REFR msg=audit(1794681807.710:7308): pid=27319 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'UID="meowman" AUID="meowman"
+type=SYSCALL msg=audit(1794681807.710:7309): arch=c000003e syscall=42 success=yes exit=0 a0=9 a1=7ffe5b6ca5d0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.710:7309): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.710:7309): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.710:7309): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.710:7309): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.710:7310): arch=c000003e syscall=42 success=yes exit=0 a0=c a1=7ffe5b6ca5d0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.710:7310): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.710:7310): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.710:7310): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.710:7310): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.710:7311): arch=c000003e syscall=42 success=yes exit=0 a0=9 a1=7ffe5b6ca5e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.710:7311): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.710:7311): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.710:7311): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.710:7311): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.710:7312): arch=c000003e syscall=42 success=yes exit=0 a0=c a1=7ffe5b6ca5e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.710:7312): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.710:7312): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.710:7312): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.710:7312): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.710:7313): arch=c000003e syscall=42 success=yes exit=0 a0=9 a1=7ffe5b6ca5d0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.710:7313): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.710:7313): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.710:7313): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.710:7313): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.710:7314): arch=c000003e syscall=42 success=yes exit=0 a0=c a1=7ffe5b6ca5d0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.710:7314): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.710:7314): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.710:7314): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.710:7314): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.711:7315): arch=c000003e syscall=42 success=yes exit=0 a0=9 a1=7ffe5b6ca5e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.711:7315): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.711:7315): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.711:7315): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.711:7315): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.711:7316): arch=c000003e syscall=42 success=yes exit=0 a0=c a1=7ffe5b6ca5e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.711:7316): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.711:7316): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.711:7316): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.711:7316): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.711:7317): arch=c000003e syscall=42 success=yes exit=0 a0=9 a1=7ffe5b6ca5d0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.711:7317): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.711:7317): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.711:7317): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.711:7317): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.711:7318): arch=c000003e syscall=42 success=yes exit=0 a0=c a1=7ffe5b6ca5d0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.711:7318): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.711:7318): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.711:7318): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.711:7318): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.711:7319): arch=c000003e syscall=42 success=yes exit=0 a0=9 a1=7ffe5b6ca5e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.711:7319): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.711:7319): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.711:7319): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.711:7319): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.711:7320): arch=c000003e syscall=42 success=yes exit=0 a0=c a1=7ffe5b6ca5e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.711:7320): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.711:7320): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.711:7320): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.711:7320): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.711:7321): arch=c000003e syscall=42 success=yes exit=0 a0=9 a1=7ffe5b6ca5d0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.711:7321): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.711:7321): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.711:7321): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.711:7321): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.711:7322): arch=c000003e syscall=42 success=yes exit=0 a0=c a1=7ffe5b6ca5d0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.711:7322): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.711:7322): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.711:7322): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.711:7322): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.712:7323): arch=c000003e syscall=42 success=yes exit=0 a0=9 a1=7ffe5b6ca5e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.712:7323): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.712:7323): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.712:7323): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.712:7323): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.712:7324): arch=c000003e syscall=42 success=yes exit=0 a0=c a1=7ffe5b6ca5e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.712:7324): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.712:7324): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.712:7324): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.712:7324): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.712:7325): arch=c000003e syscall=42 success=yes exit=0 a0=9 a1=7ffe5b6ca5d0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.712:7325): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.712:7325): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.712:7325): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.712:7325): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.712:7326): arch=c000003e syscall=42 success=yes exit=0 a0=c a1=7ffe5b6ca5d0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.712:7326): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.712:7326): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.712:7326): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.712:7326): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.712:7327): arch=c000003e syscall=42 success=yes exit=0 a0=9 a1=7ffe5b6ca5e0 a2=28 a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.712:7327): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44726F70496E00SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DropIn }
+type=CWD msg=audit(1794681807.712:7327): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.712:7327): item=0 name="/run/systemd/userdb/io.systemd.DropIn" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.712:7327): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.712:7328): arch=c000003e syscall=42 success=yes exit=0 a0=c a1=7ffe5b6ca5e0 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.712:7328): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E44796E616D69635573657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.DynamicUser }
+type=CWD msg=audit(1794681807.712:7328): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.712:7328): item=0 name="/run/systemd/userdb/io.systemd.DynamicUser" inode=1274 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.712:7328): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681807.712:7329): arch=c000003e syscall=42 success=yes exit=0 a0=6 a1=7ffe5b6ca710 a2=2d a3=0 items=1 ppid=26990 pid=27319 auid=1000 uid=1000 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sudo" exe="/usr/bin/sudo" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.712:7329): saddr=01002F72756E2F73797374656D642F7573657264622F696F2E73797374656D642E4D756C7469706C6578657200SADDR={ saddr_fam=local path=/run/systemd/userdb/io.systemd.Multiplexer }
+type=CWD msg=audit(1794681807.712:7329): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.712:7329): item=0 name="/run/systemd/userdb/io.systemd.Multiplexer" inode=1311 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.712:7329): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=USER_START msg=audit(1794681807.713:7330): pid=27319 uid=1000 auid=1000 ses=1 msg='op=PAM:session_open grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_systemd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'UID="meowman" AUID="meowman"
+type=SYSCALL msg=audit(1794681807.714:7331): arch=c000003e syscall=59 success=yes exit=0 a0=5595c5806648 a1=5595c5816de0 a2=5595c586d120 a3=0 items=2 ppid=27319 pid=27322 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="bash" exe="/usr/bin/bash" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1794681807.714:7331): argc=3 a0="bash" a1="-c" a2=7072696E746620275B556E69745D5C6E4465736372697074696F6E3D73696764696666206C61622070726F62655C6E5B536572766963655D5C6E4578656353746172743D2F62696E2F736C6565702036305C6E27203E202F6574632F73797374656D642F73797374656D2F736967646966662D6C61622D70726F62652E736572766963652026262073797374656D63746C206461656D6F6E2D72656C6F61642026262073797374656D63746C20737461727420736967646966662D6C61622D70726F62652E7365727669636520262620736C65657020302E352026262073797374656D63746C2073746F7020736967646966662D6C61622D70726F62652E7365727669636520262620726D202F6574632F73797374656D642F73797374656D2F736967646966662D6C61622D70726F62652E736572766963652026262073797374656D63746C206461656D6F6E2D72656C6F6164
+type=CWD msg=audit(1794681807.714:7331): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.714:7331): item=0 name="/usr/bin/bash" inode=626422 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681807.714:7331): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=623657 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.714:7331): proctitle=62617368002D63007072696E746620275B556E69745D5C6E4465736372697074696F6E3D73696764696666206C61622070726F62655C6E5B536572766963655D5C6E4578656353746172743D2F62696E2F736C6565702036305C6E27203E202F6574632F73797374656D642F73797374656D2F736967646966662D6C61622D70
+type=SYSCALL msg=audit(1794681807.715:7332): arch=c000003e syscall=257 success=yes exit=3 a0=ffffffffffffff9c a1=56235335e680 a2=241 a3=1b6 items=2 ppid=27319 pid=27322 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="bash" exe="/usr/bin/bash" key="sd_file"ARCH=x86_64 SYSCALL=openat AUID="meowman" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=CWD msg=audit(1794681807.715:7332): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.715:7332): item=0 name="/etc/systemd/system/" inode=27925 dev=00:23 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681807.715:7332): item=1 name="/etc/systemd/system/sigdiff-lab-probe.service" inode=1227032 dev=00:23 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=CREATE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.715:7332): proctitle=62617368002D63007072696E746620275B556E69745D5C6E4465736372697074696F6E3D73696764696666206C61622070726F62655C6E5B536572766963655D5C6E4578656353746172743D2F62696E2F736C6565702036305C6E27203E202F6574632F73797374656D642F73797374656D2F736967646966662D6C61622D70
+type=SYSCALL msg=audit(1794681807.715:7333): arch=c000003e syscall=59 success=yes exit=0 a0=56235335fa90 a1=562353360ea0 a2=562353360320 a3=20 items=2 ppid=27322 pid=27323 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="systemctl" exe="/usr/bin/systemctl" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1794681807.715:7333): argc=2 a0="systemctl" a1="daemon-reload"
+type=CWD msg=audit(1794681807.715:7333): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.715:7333): item=0 name="/usr/bin/systemctl" inode=1082257 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681807.715:7333): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=623657 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.715:7333): proctitle=73797374656D63746C006461656D6F6E2D72656C6F6164
+type=SYSCALL msg=audit(1794681807.717:7334): arch=c000003e syscall=42 success=yes exit=0 a0=3 a1=565376246e48 a2=17 a3=0 items=1 ppid=27322 pid=27323 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="systemctl" exe="/usr/bin/systemctl" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681807.717:7334): saddr=01002F72756E2F73797374656D642F7072697661746500SADDR={ saddr_fam=local path=/run/systemd/private }
+type=CWD msg=audit(1794681807.717:7334): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681807.717:7334): item=0 name="/run/systemd/private" inode=1272 dev=00:1e mode=0140700 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681807.717:7334): proctitle=73797374656D63746C006461656D6F6E2D72656C6F6164
+type=BPF msg=audit(1794681807.993:7335): prog-id=248 op=LOAD
+type=BPF msg=audit(1794681807.993:7336): prog-id=226 op=UNLOAD
+type=BPF msg=audit(1794681807.995:7337): prog-id=249 op=LOAD
+type=BPF msg=audit(1794681807.995:7338): prog-id=227 op=UNLOAD
+type=BPF msg=audit(1794681807.997:7339): prog-id=250 op=LOAD
+type=BPF msg=audit(1794681807.997:7340): prog-id=228 op=UNLOAD
+type=BPF msg=audit(1794681807.999:7341): prog-id=251 op=LOAD
+type=BPF msg=audit(1794681807.999:7342): prog-id=229 op=UNLOAD
+type=BPF msg=audit(1794681808.000:7343): prog-id=252 op=LOAD
+type=BPF msg=audit(1794681808.000:7344): prog-id=230 op=UNLOAD
+type=BPF msg=audit(1794681808.000:7345): prog-id=253 op=LOAD
+type=BPF msg=audit(1794681808.000:7346): prog-id=254 op=LOAD
+type=BPF msg=audit(1794681808.000:7347): prog-id=231 op=UNLOAD
+type=BPF msg=audit(1794681808.000:7348): prog-id=232 op=UNLOAD
+type=BPF msg=audit(1794681808.000:7349): prog-id=255 op=LOAD
+type=BPF msg=audit(1794681808.000:7350): prog-id=256 op=LOAD
+type=BPF msg=audit(1794681808.000:7351): prog-id=233 op=UNLOAD
+type=BPF msg=audit(1794681808.000:7352): prog-id=234 op=UNLOAD
+type=BPF msg=audit(1794681808.001:7353): prog-id=257 op=LOAD
+type=BPF msg=audit(1794681808.001:7354): prog-id=235 op=UNLOAD
+type=BPF msg=audit(1794681808.001:7355): prog-id=258 op=LOAD
+type=BPF msg=audit(1794681808.001:7356): prog-id=259 op=LOAD
+type=BPF msg=audit(1794681808.002:7357): prog-id=236 op=UNLOAD
+type=BPF msg=audit(1794681808.002:7358): prog-id=237 op=UNLOAD
+type=BPF msg=audit(1794681808.002:7359): prog-id=260 op=LOAD
+type=BPF msg=audit(1794681808.002:7360): prog-id=238 op=UNLOAD
+type=BPF msg=audit(1794681808.002:7361): prog-id=261 op=LOAD
+type=BPF msg=audit(1794681808.003:7362): prog-id=262 op=LOAD
+type=BPF msg=audit(1794681808.003:7363): prog-id=239 op=UNLOAD
+type=BPF msg=audit(1794681808.003:7364): prog-id=240 op=UNLOAD
+type=BPF msg=audit(1794681808.003:7365): prog-id=263 op=LOAD
+type=BPF msg=audit(1794681808.003:7366): prog-id=241 op=UNLOAD
+type=BPF msg=audit(1794681808.003:7367): prog-id=264 op=LOAD
+type=BPF msg=audit(1794681808.003:7368): prog-id=265 op=LOAD
+type=BPF msg=audit(1794681808.003:7369): prog-id=242 op=UNLOAD
+type=BPF msg=audit(1794681808.003:7370): prog-id=243 op=UNLOAD
+type=BPF msg=audit(1794681808.006:7371): prog-id=266 op=LOAD
+type=BPF msg=audit(1794681808.006:7372): prog-id=244 op=UNLOAD
+type=BPF msg=audit(1794681808.006:7373): prog-id=267 op=LOAD
+type=BPF msg=audit(1794681808.006:7374): prog-id=268 op=LOAD
+type=BPF msg=audit(1794681808.006:7375): prog-id=245 op=UNLOAD
+type=BPF msg=audit(1794681808.006:7376): prog-id=246 op=UNLOAD
+type=BPF msg=audit(1794681808.007:7377): prog-id=269 op=LOAD
+type=BPF msg=audit(1794681808.007:7378): prog-id=247 op=UNLOAD
+type=SYSCALL msg=audit(1794681808.011:7379): arch=c000003e syscall=59 success=yes exit=0 a0=56235335f970 a1=562353361020 a2=562353360320 a3=7ff2f2250ac0 items=2 ppid=27322 pid=27424 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="systemctl" exe="/usr/bin/systemctl" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1794681808.011:7379): argc=3 a0="systemctl" a1="start" a2="sigdiff-lab-probe.service"
+type=CWD msg=audit(1794681808.011:7379): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681808.011:7379): item=0 name="/usr/bin/systemctl" inode=1082257 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681808.011:7379): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=623657 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681808.011:7379): proctitle=73797374656D63746C00737461727400736967646966662D6C61622D70726F62652E73657276696365
+type=SYSCALL msg=audit(1794681808.013:7380): arch=c000003e syscall=42 success=yes exit=0 a0=3 a1=55f279418e48 a2=17 a3=0 items=1 ppid=27322 pid=27424 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="systemctl" exe="/usr/bin/systemctl" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681808.013:7380): saddr=01002F72756E2F73797374656D642F7072697661746500SADDR={ saddr_fam=local path=/run/systemd/private }
+type=CWD msg=audit(1794681808.013:7380): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681808.013:7380): item=0 name="/run/systemd/private" inode=1272 dev=00:1e mode=0140700 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681808.013:7380): proctitle=73797374656D63746C00737461727400736967646966662D6C61622D70726F62652E73657276696365
+type=SERVICE_START msg=audit(1794681808.022:7381): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=sigdiff-lab-probe comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'UID="root" AUID="unset"
+type=SYSCALL msg=audit(1794681808.023:7382): arch=c000003e syscall=59 success=yes exit=0 a0=562353360e80 a1=562353360fc0 a2=562353360320 a3=20 items=2 ppid=27322 pid=27427 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="sleep" exe="/usr/bin/sleep" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1794681808.023:7382): argc=2 a0="sleep" a1="0.5"
+type=CWD msg=audit(1794681808.023:7382): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681808.023:7382): item=0 name="/usr/bin/sleep" inode=1062848 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681808.023:7382): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=623657 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681808.023:7382): proctitle=736C65657000302E35
+type=SYSCALL msg=audit(1794681808.525:7383): arch=c000003e syscall=59 success=yes exit=0 a0=562353360fc0 a1=562353361050 a2=562353360320 a3=40 items=2 ppid=27322 pid=27428 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="systemctl" exe="/usr/bin/systemctl" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1794681808.525:7383): argc=3 a0="systemctl" a1="stop" a2="sigdiff-lab-probe.service"
+type=CWD msg=audit(1794681808.525:7383): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681808.525:7383): item=0 name="/usr/bin/systemctl" inode=1082257 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681808.525:7383): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=623657 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681808.525:7383): proctitle=73797374656D63746C0073746F7000736967646966662D6C61622D70726F62652E73657276696365
+type=SYSCALL msg=audit(1794681808.533:7384): arch=c000003e syscall=42 success=yes exit=0 a0=3 a1=55f3298a4e48 a2=17 a3=0 items=1 ppid=27322 pid=27428 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="systemctl" exe="/usr/bin/systemctl" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681808.533:7384): saddr=01002F72756E2F73797374656D642F7072697661746500SADDR={ saddr_fam=local path=/run/systemd/private }
+type=CWD msg=audit(1794681808.533:7384): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681808.533:7384): item=0 name="/run/systemd/private" inode=1272 dev=00:1e mode=0140700 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681808.533:7384): proctitle=73797374656D63746C0073746F7000736967646966662D6C61622D70726F62652E73657276696365
+type=SERVICE_STOP msg=audit(1794681808.545:7385): pid=1 uid=0 auid=4294967295 ses=4294967295 msg='unit=sigdiff-lab-probe comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'UID="root" AUID="unset"
+type=SYSCALL msg=audit(1794681808.555:7386): arch=c000003e syscall=59 success=yes exit=0 a0=56235335dcd0 a1=56235335e100 a2=562353360320 a3=40 items=2 ppid=27322 pid=27430 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="rm" exe="/usr/bin/rm" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1794681808.555:7386): argc=2 a0="rm" a1="/etc/systemd/system/sigdiff-lab-probe.service"
+type=CWD msg=audit(1794681808.555:7386): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681808.555:7386): item=0 name="/usr/bin/rm" inode=1062838 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681808.555:7386): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=623657 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681808.555:7386): proctitle=726D002F6574632F73797374656D642F73797374656D2F736967646966662D6C61622D70726F62652E73657276696365
+type=SYSCALL msg=audit(1794681808.557:7387): arch=c000003e syscall=263 success=yes exit=0 a0=ffffff9c a1=559a37b43c60 a2=0 a3=559a37b44e80 items=2 ppid=27322 pid=27430 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="rm" exe="/usr/bin/rm" key="sd_file"ARCH=x86_64 SYSCALL=unlinkat AUID="meowman" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=CWD msg=audit(1794681808.557:7387): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681808.557:7387): item=0 name="/etc/systemd/system/" inode=27925 dev=00:23 mode=040755 ouid=0 ogid=0 rdev=00:00 nametype=PARENT cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681808.557:7387): item=1 name="/etc/systemd/system/sigdiff-lab-probe.service" inode=1227032 dev=00:23 mode=0100644 ouid=0 ogid=0 rdev=00:00 nametype=DELETE cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681808.557:7387): proctitle=726D002F6574632F73797374656D642F73797374656D2F736967646966662D6C61622D70726F62652E73657276696365
+type=SYSCALL msg=audit(1794681808.558:7388): arch=c000003e syscall=59 success=yes exit=0 a0=56235335de90 a1=562353360e60 a2=562353360320 a3=7ff2f2250ac0 items=2 ppid=27319 pid=27322 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="systemctl" exe="/usr/bin/systemctl" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=EXECVE msg=audit(1794681808.558:7388): argc=2 a0="systemctl" a1="daemon-reload"
+type=CWD msg=audit(1794681808.558:7388): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681808.558:7388): item=0 name="/usr/bin/systemctl" inode=1082257 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681808.558:7388): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=623657 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681808.558:7388): proctitle=62617368002D63007072696E746620275B556E69745D5C6E4465736372697074696F6E3D73696764696666206C61622070726F62655C6E5B536572766963655D5C6E4578656353746172743D2F62696E2F736C6565702036305C6E27203E202F6574632F73797374656D642F73797374656D2F736967646966662D6C61622D70
+type=SYSCALL msg=audit(1794681808.566:7389): arch=c000003e syscall=42 success=yes exit=0 a0=3 a1=55b5a69e8e48 a2=17 a3=0 items=1 ppid=27319 pid=27322 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=1 comm="systemctl" exe="/usr/bin/systemctl" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="root" GID="root" EUID="root" SUID="root" FSUID="root" EGID="root" SGID="root" FSGID="root"
+type=SOCKADDR msg=audit(1794681808.566:7389): saddr=01002F72756E2F73797374656D642F7072697661746500SADDR={ saddr_fam=local path=/run/systemd/private }
+type=CWD msg=audit(1794681808.566:7389): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1794681808.566:7389): item=0 name="/run/systemd/private" inode=1272 dev=00:1e mode=0140700 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681808.566:7389): proctitle=62617368002D63007072696E746620275B556E69745D5C6E4465736372697074696F6E3D73696764696666206C61622070726F62655C6E5B536572766963655D5C6E4578656353746172743D2F62696E2F736C6565702036305C6E27203E202F6574632F73797374656D642F73797374656D2F736967646966662D6C61622D70
+type=BPF msg=audit(1794681808.810:7390): prog-id=270 op=LOAD
+type=BPF msg=audit(1794681808.810:7391): prog-id=248 op=UNLOAD
+type=BPF msg=audit(1794681808.812:7392): prog-id=271 op=LOAD
+type=BPF msg=audit(1794681808.812:7393): prog-id=249 op=UNLOAD
+type=BPF msg=audit(1794681808.814:7394): prog-id=272 op=LOAD
+type=BPF msg=audit(1794681808.814:7395): prog-id=250 op=UNLOAD
+type=BPF msg=audit(1794681808.815:7396): prog-id=273 op=LOAD
+type=BPF msg=audit(1794681808.815:7397): prog-id=251 op=UNLOAD
+type=BPF msg=audit(1794681808.816:7398): prog-id=274 op=LOAD
+type=BPF msg=audit(1794681808.817:7399): prog-id=252 op=UNLOAD
+type=BPF msg=audit(1794681808.817:7400): prog-id=275 op=LOAD
+type=BPF msg=audit(1794681808.817:7401): prog-id=276 op=LOAD
+type=BPF msg=audit(1794681808.817:7402): prog-id=253 op=UNLOAD
+type=BPF msg=audit(1794681808.817:7403): prog-id=254 op=UNLOAD
+type=BPF msg=audit(1794681808.817:7404): prog-id=277 op=LOAD
+type=BPF msg=audit(1794681808.817:7405): prog-id=278 op=LOAD
+type=BPF msg=audit(1794681808.817:7406): prog-id=255 op=UNLOAD
+type=BPF msg=audit(1794681808.817:7407): prog-id=256 op=UNLOAD
+type=BPF msg=audit(1794681808.818:7408): prog-id=279 op=LOAD
+type=BPF msg=audit(1794681808.818:7409): prog-id=257 op=UNLOAD
+type=BPF msg=audit(1794681808.818:7410): prog-id=280 op=LOAD
+type=BPF msg=audit(1794681808.818:7411): prog-id=281 op=LOAD
+type=BPF msg=audit(1794681808.818:7412): prog-id=258 op=UNLOAD
+type=BPF msg=audit(1794681808.818:7413): prog-id=259 op=UNLOAD
+type=BPF msg=audit(1794681808.819:7414): prog-id=282 op=LOAD
+type=BPF msg=audit(1794681808.819:7415): prog-id=260 op=UNLOAD
+type=BPF msg=audit(1794681808.819:7416): prog-id=283 op=LOAD
+type=BPF msg=audit(1794681808.819:7417): prog-id=284 op=LOAD
+type=BPF msg=audit(1794681808.819:7418): prog-id=261 op=UNLOAD
+type=BPF msg=audit(1794681808.819:7419): prog-id=262 op=UNLOAD
+type=BPF msg=audit(1794681808.820:7420): prog-id=285 op=LOAD
+type=BPF msg=audit(1794681808.820:7421): prog-id=263 op=UNLOAD
+type=BPF msg=audit(1794681808.820:7422): prog-id=286 op=LOAD
+type=BPF msg=audit(1794681808.820:7423): prog-id=287 op=LOAD
+type=BPF msg=audit(1794681808.820:7424): prog-id=264 op=UNLOAD
+type=BPF msg=audit(1794681808.820:7425): prog-id=265 op=UNLOAD
+type=BPF msg=audit(1794681808.822:7426): prog-id=288 op=LOAD
+type=BPF msg=audit(1794681808.822:7427): prog-id=266 op=UNLOAD
+type=BPF msg=audit(1794681808.822:7428): prog-id=289 op=LOAD
+type=BPF msg=audit(1794681808.822:7429): prog-id=290 op=LOAD
+type=BPF msg=audit(1794681808.822:7430): prog-id=267 op=UNLOAD
+type=BPF msg=audit(1794681808.822:7431): prog-id=268 op=UNLOAD
+type=BPF msg=audit(1794681808.823:7432): prog-id=291 op=LOAD
+type=BPF msg=audit(1794681808.823:7433): prog-id=269 op=UNLOAD
+type=USER_END msg=audit(1794681808.827:7434): pid=27319 uid=1000 auid=1000 ses=1 msg='op=PAM:session_close grantors=pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_systemd acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'UID="meowman" AUID="meowman"
+type=CRED_DISP msg=audit(1794681808.827:7435): pid=27319 uid=1000 auid=1000 ses=1 msg='op=PAM:setcred grantors=pam_faillock,pam_permit,pam_env,pam_faillock acct="root" exe="/usr/bin/sudo" hostname=? addr=? terminal=? res=success'UID="meowman" AUID="meowman"
+type=SYSCALL msg=audit(1794681809.229:7436): arch=c000003e syscall=59 success=no exit=-2 a0=7fca6da153f0 a1=7fca6cf3ab20 a2=7ffe53ada420 a3=8 items=1 ppid=26990 pid=27532 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="python3" exe="/usr/bin/python3.14" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=CWD msg=audit(1794681809.229:7436): cwd="/home/meowman/projects/sigdiff"
+type=PATH msg=audit(1794681809.229:7436): item=0 name="/home/meowman/.local/bin/logger" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1794681809.229:7436): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681809.229:7437): arch=c000003e syscall=59 success=no exit=-2 a0=7fca6cf399b0 a1=7fca6cf3ab20 a2=7ffe53ada420 a3=8 items=1 ppid=26990 pid=27532 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="python3" exe="/usr/bin/python3.14" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=CWD msg=audit(1794681809.229:7437): cwd="/home/meowman/projects/sigdiff"
+type=PATH msg=audit(1794681809.229:7437): item=0 name="/home/meowman/.opencode/bin/logger" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1794681809.229:7437): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681809.229:7438): arch=c000003e syscall=59 success=no exit=-2 a0=7fca6da14150 a1=7fca6cf3ab20 a2=7ffe53ada420 a3=8 items=1 ppid=26990 pid=27532 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="python3" exe="/usr/bin/python3.14" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=CWD msg=audit(1794681809.229:7438): cwd="/home/meowman/projects/sigdiff"
+type=PATH msg=audit(1794681809.229:7438): item=0 name="/opt/rocm/bin/logger" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1794681809.229:7438): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681809.229:7439): arch=c000003e syscall=59 success=no exit=-2 a0=7fca6da17850 a1=7fca6cf3ab20 a2=7ffe53ada420 a3=8 items=1 ppid=26990 pid=27532 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="python3" exe="/usr/bin/python3.14" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=CWD msg=audit(1794681809.229:7439): cwd="/home/meowman/projects/sigdiff"
+type=PATH msg=audit(1794681809.229:7439): item=0 name="/usr/local/bin/logger" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1794681809.229:7439): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681809.229:7440): arch=c000003e syscall=59 success=yes exit=0 a0=7fca6e528a90 a1=7fca6cf3ab20 a2=7ffe53ada420 a3=8 items=2 ppid=26990 pid=27532 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="logger" exe="/usr/bin/logger" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=EXECVE msg=audit(1794681809.229:7440): argc=4 a0="logger" a1="-t" a2="sigdiff" a3="sigdiff-flush-barrier"
+type=CWD msg=audit(1794681809.229:7440): cwd="/home/meowman/projects/sigdiff"
+type=PATH msg=audit(1794681809.229:7440): item=0 name="/usr/bin/logger" inode=653157 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681809.229:7440): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=623657 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681809.229:7440): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681809.232:7441): arch=c000003e syscall=42 success=yes exit=0 a0=3 a1=556bf82712e0 a2=6e a3=0 items=1 ppid=26990 pid=27532 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="logger" exe="/usr/bin/logger" key="sd"ARCH=x86_64 SYSCALL=connect AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=SOCKADDR msg=audit(1794681809.232:7441): saddr=01002F6465762F6C6F6700000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000SADDR={ saddr_fam=local path=/dev/log }
+type=CWD msg=audit(1794681809.232:7441): cwd="/home/meowman/projects/sigdiff"
+type=PATH msg=audit(1794681809.232:7441): item=0 name="/dev/log" inode=39 dev=00:1e mode=0140666 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681809.232:7441): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681809.234:7442): arch=c000003e syscall=59 success=no exit=-2 a0=7fca6cf3b3c0 a1=7fca6cf672b0 a2=7ffe53ada420 a3=8 items=1 ppid=26990 pid=27533 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="python3" exe="/usr/bin/python3.14" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=CWD msg=audit(1794681809.234:7442): cwd="/home/meowman/projects/sigdiff"
+type=PATH msg=audit(1794681809.234:7442): item=0 name="/home/meowman/.local/bin/journalctl" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1794681809.234:7442): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681809.234:7443): arch=c000003e syscall=59 success=no exit=-2 a0=7fca6cf39ce0 a1=7fca6cf672b0 a2=7ffe53ada420 a3=8 items=1 ppid=26990 pid=27533 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="python3" exe="/usr/bin/python3.14" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=CWD msg=audit(1794681809.234:7443): cwd="/home/meowman/projects/sigdiff"
+type=PATH msg=audit(1794681809.234:7443): item=0 name="/home/meowman/.opencode/bin/journalctl" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1794681809.234:7443): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681809.234:7444): arch=c000003e syscall=59 success=no exit=-2 a0=7fca6da14cf0 a1=7fca6cf672b0 a2=7ffe53ada420 a3=8 items=1 ppid=26990 pid=27533 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="python3" exe="/usr/bin/python3.14" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=CWD msg=audit(1794681809.234:7444): cwd="/home/meowman/projects/sigdiff"
+type=PATH msg=audit(1794681809.234:7444): item=0 name="/opt/rocm/bin/journalctl" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1794681809.234:7444): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681809.234:7445): arch=c000003e syscall=59 success=no exit=-2 a0=7fca6da162f0 a1=7fca6cf672b0 a2=7ffe53ada420 a3=8 items=1 ppid=26990 pid=27533 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="python3" exe="/usr/bin/python3.14" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=CWD msg=audit(1794681809.234:7445): cwd="/home/meowman/projects/sigdiff"
+type=PATH msg=audit(1794681809.234:7445): item=0 name="/usr/local/bin/journalctl" nametype=UNKNOWN cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0
+type=PROCTITLE msg=audit(1794681809.234:7445): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C
+type=SYSCALL msg=audit(1794681809.234:7446): arch=c000003e syscall=59 success=yes exit=0 a0=7fca6da16250 a1=7fca6cf672b0 a2=7ffe53ada420 a3=8 items=2 ppid=26990 pid=27533 auid=1000 uid=1000 gid=1000 euid=1000 suid=1000 fsuid=1000 egid=1000 sgid=1000 fsgid=1000 tty=(none) ses=1 comm="journalctl" exe="/usr/bin/journalctl" key="sd"ARCH=x86_64 SYSCALL=execve AUID="meowman" UID="meowman" GID="meowman" EUID="meowman" SUID="meowman" FSUID="meowman" EGID="meowman" SGID="meowman" FSGID="meowman"
+type=EXECVE msg=audit(1794681809.234:7446): argc=7 a0="journalctl" a1="-q" a2="--no-pager" a3="-g" a4="sigdiff-flush-barrier" a5="--since" a6="@1794681807.69"
+type=CWD msg=audit(1794681809.234:7446): cwd="/home/meowman/projects/sigdiff"
+type=PATH msg=audit(1794681809.234:7446): item=0 name="/usr/bin/journalctl" inode=1082243 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PATH msg=audit(1794681809.234:7446): item=1 name="/lib64/ld-linux-x86-64.so.2" inode=623657 dev=00:23 mode=0100755 ouid=0 ogid=0 rdev=00:00 nametype=NORMAL cap_fp=0 cap_fi=0 cap_fe=0 cap_fver=0 cap_frootid=0OUID="root" OGID="root"
+type=PROCTITLE msg=audit(1794681809.234:7446): proctitle=707974686F6E33002D6D00736967646966660072756E002D2D6F75740072756E2E79616D6C

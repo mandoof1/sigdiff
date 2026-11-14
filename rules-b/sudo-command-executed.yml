@@ -1,0 +1,15 @@
+title: sudo ran a command (session log)
+id: 5be4f136-7f75-54a5-9125-772811166b95
+status: stable
+description: sigdiff generated rule (sudo-command-executed).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  service: sudo
+detection:
+  selection:
+    Action: command
+  condition: selection
+level: low
+tags:
+- attack.T1548.003

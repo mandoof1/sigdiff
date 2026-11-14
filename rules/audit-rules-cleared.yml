@@ -1,0 +1,15 @@
+title: auditd rules cleared at runtime (log-collection tampering)
+id: 14664096-346c-50e4-baf6-98880f7b08cc
+status: stable
+description: sigdiff generated rule (audit-rules-cleared).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  service: auditd
+detection:
+  sel_del:
+    op: remove_rule
+  condition: sel_del
+level: high
+tags:
+- attack.T1562.001

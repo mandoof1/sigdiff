@@ -1,0 +1,15 @@
+title: Local account deleted
+id: 50dd06b5-dbad-50e0-9583-7e1b917d94ee
+status: stable
+description: sigdiff generated rule (account-delete-userdel).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains: userdel
+  condition: selection
+level: medium
+tags:
+- attack.T1531

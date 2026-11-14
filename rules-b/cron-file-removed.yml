@@ -1,0 +1,16 @@
+title: File removed under /etc/cron.d
+id: 4af36b33-cb25-5775-aa43-cdaec48cfdb0
+status: stable
+description: sigdiff generated rule (cron-file-removed).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_delete
+detection:
+  selection:
+    TargetFilename|startswith: /etc/cron.d/
+  condition: selection
+level: medium
+tags:
+- attack.T1053.003
+- attack.T1070

@@ -1,0 +1,17 @@
+title: Process-killing tools invoked (agent-tampering pattern)
+id: 7010cb9e-eab3-59eb-b8da-5a32e00336cf
+status: stable
+description: sigdiff generated rule (security-software-kill).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains:
+    - 'pkill '
+    - 'killall '
+  condition: selection
+level: medium
+tags:
+- attack.T1562.001

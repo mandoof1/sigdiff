@@ -1,0 +1,15 @@
+title: File created under /etc/cron.d
+id: 8e715621-b04b-5b18-b3a1-8e8a55c8d3b3
+status: stable
+description: sigdiff generated rule (cron-file-created).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_create
+detection:
+  selection:
+    TargetFilename|startswith: /etc/cron.d/
+  condition: selection
+level: high
+tags:
+- attack.T1053.003

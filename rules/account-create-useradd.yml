@@ -1,0 +1,15 @@
+title: Local account created
+id: 0d755db0-6b2f-5637-b7b9-2d88bb87833b
+status: stable
+description: sigdiff generated rule (account-create-useradd).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains: useradd
+  condition: selection
+level: high
+tags:
+- attack.T1136.001

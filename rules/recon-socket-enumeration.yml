@@ -1,0 +1,17 @@
+title: Socket/connection enumeration (ss, netstat)
+id: 6a1f1d52-cadd-5d6c-b758-86485f222d9f
+status: stable
+description: sigdiff generated rule (recon-socket-enumeration).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains:
+    - ss -
+    - netstat
+  condition: selection
+level: low
+tags:
+- attack.T1049

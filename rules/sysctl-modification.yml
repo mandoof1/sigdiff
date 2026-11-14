@@ -1,0 +1,16 @@
+title: Kernel parameter changed live
+id: e5a70f30-3a28-50ed-8008-472c03455f32
+status: stable
+description: sigdiff generated rule (sysctl-modification).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains: sysctl -w
+  condition: selection
+level: medium
+tags:
+- attack.T1562
+- attack.T1547

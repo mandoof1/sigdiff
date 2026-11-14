@@ -1,0 +1,1 @@
+{"__REALTIME_TIMESTAMP":"1700000201000000","SYSLOG_IDENTIFIER":"sudo-noise","MESSAGE":"meowman : TTY=pts/0 ; PWD=/home/meowman ; USER=root ; COMMAND=bash -c apt update"}

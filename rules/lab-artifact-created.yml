@@ -1,0 +1,15 @@
+title: File created under the lab workdir
+id: d4e2a79d-1598-54aa-a399-d35f1aa23a79
+status: stable
+description: sigdiff generated rule (lab-artifact-created).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_create
+detection:
+  selection:
+    TargetFilename|startswith: /tmp/sigdiff-lab/
+  condition: selection
+level: low
+tags:
+- attack.T1105

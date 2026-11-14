@@ -1,0 +1,16 @@
+title: Unit file removed from /etc/systemd/system
+id: 2319f936-fedf-5228-9e87-2385e56dd011
+status: stable
+description: sigdiff generated rule (systemd-unit-removed).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_delete
+detection:
+  selection:
+    TargetFilename|startswith: /etc/systemd/system/
+  condition: selection
+level: medium
+tags:
+- attack.T1543.002
+- attack.T1070

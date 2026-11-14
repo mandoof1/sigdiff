@@ -1,0 +1,15 @@
+title: /etc/shadow modified
+id: 5c3216cf-54b2-5107-a27f-905b492d09f1
+status: stable
+description: sigdiff generated rule (shadow-file-modified).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_modify
+detection:
+  selection:
+    TargetFilename|equals: /etc/shadow
+  condition: selection
+level: high
+tags:
+- attack.T1098

@@ -1,0 +1,16 @@
+title: SSH authorized_keys deleted
+id: fcc6202d-2266-5954-98c0-a9cbfe4d1882
+status: stable
+description: sigdiff generated rule (authorized-keys-removed).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_delete
+detection:
+  selection:
+    TargetFilename|endswith: /authorized_keys
+  condition: selection
+level: medium
+tags:
+- attack.T1098.004
+- attack.T1070

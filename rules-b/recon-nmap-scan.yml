@@ -1,0 +1,15 @@
+title: nmap invoked
+id: 2beeeb7c-8ba1-56e3-b623-3b154ba1f7c6
+status: stable
+description: sigdiff generated rule (recon-nmap-scan).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    Image|endswith: /nmap
+  condition: selection
+level: medium
+tags:
+- attack.T1046

@@ -1,0 +1,17 @@
+techniques:
+  - id: attack-mini
+    title: fixture - mixed attack telemetry window
+    mitre: [T1059.004]
+    command: "true"
+    expect_hits: [revshell-bash-devtcp, suspicious-outbound-4444, revshell-python-socket,
+      suspicious-outbound-1337, rm-shell-history, history-file-deleted, history-env-modified,
+      ld-preload-modified, ld-preload-deleted, audit-rule-added, ssh-accepted-password,
+      ssh-accepted-external, ssh-session-opened, sudo-command-executed, lab-unit-started,
+      lab-unit-stopped]
+  - id: control-mini
+    title: fixture - benign control window
+    mitre: []
+    command: "true"
+    expect_hits: [lab-artifact-created]
+    forbid_hits: [revshell-bash-devtcp, suspicious-outbound-4444, ssh-accepted-external,
+      ld-preload-modified, sudo-command-executed]

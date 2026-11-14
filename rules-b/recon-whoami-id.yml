@@ -1,0 +1,20 @@
+title: 'Basic discovery: whoami / id / uname / hostname'
+id: 1c9914bd-a601-5718-9c51-258d391e8328
+status: stable
+description: sigdiff generated rule (recon-whoami-id).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    Image|endswith:
+    - /whoami
+    - /id
+    - /uname
+    - /hostname
+  condition: selection
+level: low
+tags:
+- attack.T1033
+- attack.T1087

@@ -1,0 +1,18 @@
+title: base64 decode in the command line (staged payload)
+id: 43c5ac1a-a1a0-5a22-ad63-95400f149bea
+status: stable
+description: sigdiff generated rule (base64-decoded-exec).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains:
+    - base64 -d
+    - base64 --decode
+    - openssl base64
+  condition: selection
+level: medium
+tags:
+- attack.T1140

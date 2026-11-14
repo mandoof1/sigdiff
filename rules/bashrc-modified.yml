@@ -1,0 +1,18 @@
+title: Shell rc file modified
+id: a327bd7b-07f4-583c-a9f0-87593898dceb
+status: stable
+description: sigdiff generated rule (bashrc-modified).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_modify
+detection:
+  selection:
+    TargetFilename|endswith:
+    - /.bashrc
+    - /.zshrc
+    - /.bash_profile
+  condition: selection
+level: high
+tags:
+- attack.T1546.004

@@ -1,0 +1,15 @@
+title: Any file event touching /etc (broad, sloppy)
+id: 151ed26d-1293-5009-8af7-7164294baf6c
+status: stable
+description: sigdiff generated rule (loose-etc-touch).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_modify
+detection:
+  selection:
+    TargetFilename|contains: /etc/
+  condition: selection
+level: low
+tags:
+- attack.T1005

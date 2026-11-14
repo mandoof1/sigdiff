@@ -1,0 +1,16 @@
+title: 'logger invoked (log-injection vector: forged syslog lines)'
+id: 277044a9-e2c5-570e-bb5e-c54ca05809c0
+status: stable
+description: sigdiff generated rule (logger-exec-injection).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    Image|endswith: /logger
+  condition: selection
+level: medium
+tags:
+- attack.T1562.002
+- attack.T1070.002

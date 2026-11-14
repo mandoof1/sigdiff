@@ -1,0 +1,18 @@
+title: setuid bit granted on a binary
+id: fa9d530b-6ec1-5bef-b2fa-ecedfe0dad09
+status: stable
+description: sigdiff generated rule (setuid-bit-granted).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains:
+    - chmod u+s
+    - chmod +s
+    - chmod 4755
+  condition: selection
+level: high
+tags:
+- attack.T1548.001

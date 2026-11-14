@@ -1,0 +1,15 @@
+title: Packet capture tool invoked
+id: a0a510c7-0330-51cf-8b17-2e6c5d393310
+status: stable
+description: sigdiff generated rule (network-sniffing-tcpdump).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    Image|endswith: /tcpdump
+  condition: selection
+level: high
+tags:
+- attack.T1040

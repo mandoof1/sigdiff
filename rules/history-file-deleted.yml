@@ -1,0 +1,15 @@
+title: Shell history file deleted
+id: 577cfd1f-3c14-5700-bf99-529869767f86
+status: stable
+description: sigdiff generated rule (history-file-deleted).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_delete
+detection:
+  selection:
+    TargetFilename|endswith: /.bash_history
+  condition: selection
+level: high
+tags:
+- attack.T1070.003

@@ -1,0 +1,8 @@
+{"version":3,"term":{"cols":80,"rows":24},"timestamp":1794685302,"idle_time_limit":1.2,"command":"tools/demo.sh"}
+[0.018, "o", "$ sigdiff compile\r\n"]
+[0.250, "o", "rules: 58 total · 58 compiled · 0 with errors\r\n  source auditd: 50\r\n  source auth: 6\r\n  source journald: 2\r\n"]
+[0.010, "o", "\r\n$ sigdiff replay            # the recorded windows, back through the rules\r\n"]
+[0.484, "o", "fixtures: 34 windows · rules: 58 · fired: 58 · never-fired: 0\r\n"]
+[0.012, "o", "\r\n$ sigdiff ablate --rules-a rules --rules-b rules-b | head -14\r\n"]
+[0.702, "o", "| technique | no rules | rules A | rules B | A-only | B-only |\r\n|---|---|---|---|---|---|\r\n| account-lifecycle | 0 | 7 | 9 | 0 | 2 |\r\n| audit-tamper-last | 0 | 4 | 5 | 0 | 1 |\r\n| base64-stage | 0 | 2 | 3 | 0 | 1 |\r\n| chmod-777 | 0 | 2 | 3 | 0 | 1 |\r\n| collect-tar | 0 | 3 | 4 | 0 | 1 |\r\n| control-benign | 0 | 1 | 2 | 0 | 1 |\r\n| curl-pipe-sh | 0 | 4 | 5 | 0 | 1 |\r\n| discovery-basic | 0 | 1 | 2 | 0 | 1 |\r\n| discovery-netinfo | 0 | 2 | 3 | 0 | 1 |\r\n| discovery-nmap | 0 | 1 | 2 | 0 | 1 |\r\n| dmesg-clear | 0 | 3 | 4 | 0 | 1 |\r\n| exfil-upload | 0 | 6 | 7 | 0 | 1 |\r\n"]
+[1.013, "x", "0"]

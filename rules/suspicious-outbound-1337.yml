@@ -1,0 +1,15 @@
+title: Outbound connect to port 1337
+id: 55518141-edf6-5362-a1a3-0d7f36735ae5
+status: stable
+description: sigdiff generated rule (suspicious-outbound-1337).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: network_connection
+detection:
+  selection:
+    DestinationPort: '1337'
+  condition: selection
+level: medium
+tags:
+- attack.T1571

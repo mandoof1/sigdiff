@@ -1,0 +1,19 @@
+title: Download over http(s) with curl/wget
+id: fc67cc78-720f-5fe2-b9dc-c327ee062c04
+status: stable
+description: sigdiff generated rule (ingress-tool-transfer).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  sel_tool:
+    CommandLine|contains:
+    - curl
+    - wget
+  sel_http:
+    CommandLine|contains: http://
+  condition: sel_tool and sel_http
+level: medium
+tags:
+- attack.T1105

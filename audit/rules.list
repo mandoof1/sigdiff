@@ -1,0 +1,20 @@
+# sigdiff live-telemetry collection rules.
+# Installed by `sigdiff run` (as root), removed afterwards. The lab boundary
+# is the workdir + the watched persistence/log files + this lab user's audit
+# identity; everything else on the box never enters a baseline window.
+-a exit,always -F arch=b64 -S all -F dir=/tmp/sigdiff-lab -F perm=wa -k sd_file
+-a exit,always -F arch=b64 -S all -F path=/etc/ld.so.preload -F perm=wa -k sd_file
+-a exit,always -F arch=b64 -S all -F dir=/etc/cron.d -F perm=wa -k sd_file
+-a exit,always -F arch=b64 -S all -F dir=/etc/systemd/system -F perm=wa -k sd_file
+-a exit,always -F arch=b64 -S all -F path=/etc/passwd -F perm=wa -k sd_file
+-a exit,always -F arch=b64 -S all -F path=/etc/shadow -F perm=wa -k sd_file
+-a exit,always -F arch=b64 -S all -F path=/etc/gshadow -F perm=wa -k sd_file
+-a exit,always -F arch=b64 -S all -F path=/etc/sudoers -F perm=wa -k sd_file
+-a exit,always -F arch=b64 -S all -F dir=/etc/sudoers.d -F perm=wa -k sd_file
+-a exit,always -F arch=b64 -S all -F dir=/home/meowman -F perm=wa -k sd_file
+-a exit,always -F arch=b64 -S all -F dir=/home/meowman/.ssh -F perm=wa -k sd_file
+-a exit,always -F arch=b64 -S all -F dir=/var/log/sigdiff-lab -F perm=wa -k sd_file
+-a exit,always -F arch=b64 -S execve,execveat -F auid=1000 -k sd
+-a exit,always -F arch=b64 -S connect -F auid=1000 -k sd
+-a exit,always -F arch=b64 -S mount,umount2 -F auid=1000 -k sd
+-a exit,always -F arch=b64 -S init_module,finit_module,delete_module -F auid=1000 -k sd

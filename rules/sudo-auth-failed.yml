@@ -1,0 +1,15 @@
+title: sudo authentication failure
+id: 7ea401aa-ab12-5929-8c83-efcf43804a4e
+status: stable
+description: sigdiff generated rule (sudo-auth-failed).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  service: sudo
+detection:
+  selection:
+    Action: auth_fail
+  condition: selection
+level: high
+tags:
+- attack.T1110.001

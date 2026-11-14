@@ -1,0 +1,15 @@
+title: /etc/passwd modified
+id: fbc77c15-77fe-576e-8ebf-71f766e19f5e
+status: stable
+description: sigdiff generated rule (passwd-file-modified).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_modify
+detection:
+  selection:
+    TargetFilename|equals: /etc/passwd
+  condition: selection
+level: medium
+tags:
+- attack.T1098

@@ -1,0 +1,15 @@
+title: Any bash invocation (broad, sloppy)
+id: 06ece35f-29e6-5ae1-84bd-49e83b35d2c6
+status: stable
+description: sigdiff generated rule (loose-any-bash).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    Image|endswith: /bash
+  condition: selection
+level: low
+tags:
+- attack.execution

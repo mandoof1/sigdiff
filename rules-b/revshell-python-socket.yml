@@ -1,0 +1,16 @@
+title: Python socket connect one-liner (hand-rolled reverse shell)
+id: fbefdb50-a53c-51fe-81a0-cf2c44bc9497
+status: stable
+description: sigdiff generated rule (revshell-python-socket).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains: socket.socket
+  condition: selection
+level: high
+tags:
+- attack.command-and-control
+- attack.T1090

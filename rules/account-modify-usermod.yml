@@ -1,0 +1,15 @@
+title: Local account modified
+id: 0854f462-f571-5507-8b0b-7b89cd6d9f5a
+status: stable
+description: sigdiff generated rule (account-modify-usermod).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains: usermod
+  condition: selection
+level: high
+tags:
+- attack.T1098

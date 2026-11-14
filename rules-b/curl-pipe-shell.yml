@@ -1,0 +1,18 @@
+title: curl output piped straight to sh
+id: 986fff5f-abc4-5360-928d-4eff472231bb
+status: stable
+description: sigdiff generated rule (curl-pipe-shell).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  sel_curl:
+    CommandLine|contains: curl
+  sel_pipe:
+    CommandLine|contains: '| sh'
+  condition: sel_curl and sel_pipe
+level: high
+tags:
+- attack.T1105
+- attack.execution

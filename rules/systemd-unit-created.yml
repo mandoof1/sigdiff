@@ -1,0 +1,15 @@
+title: Unit file created under /etc/systemd/system
+id: 7e1bb20b-afab-5a0c-95cd-d6bd99a64334
+status: stable
+description: sigdiff generated rule (systemd-unit-created).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_create
+detection:
+  selection:
+    TargetFilename|startswith: /etc/systemd/system/
+  condition: selection
+level: high
+tags:
+- attack.T1543.002

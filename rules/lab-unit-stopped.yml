@@ -1,0 +1,19 @@
+title: Lab systemd unit deactivated
+id: 32861be0-b641-5f5a-81e5-9a1a328efaff
+status: stable
+description: sigdiff generated rule (lab-unit-stopped).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  service: systemd
+detection:
+  sel_unit:
+    Unit: sigdiff-lab-probe.service
+  sel_stop:
+    Message|contains:
+    - Deactivated successfully
+    - Stopped sigdiff lab probe
+  condition: sel_unit and sel_stop
+level: medium
+tags:
+- attack.T1543.002

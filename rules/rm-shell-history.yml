@@ -1,0 +1,15 @@
+title: Shell history file removed or overwritten
+id: bb4e08d5-694e-50ea-a392-21b4269e4911
+status: stable
+description: sigdiff generated rule (rm-shell-history).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains: .bash_history
+  condition: selection
+level: high
+tags:
+- attack.T1070.003

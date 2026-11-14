@@ -1,0 +1,17 @@
+title: Kernel ring buffer cleared
+id: b6f6124f-32fc-506c-9382-e2e55b13bc0b
+status: stable
+description: sigdiff generated rule (dmesg-cleared).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains:
+    - dmesg -C
+    - dmesg --clear
+  condition: selection
+level: high
+tags:
+- attack.T1562.002

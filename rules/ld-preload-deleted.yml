@@ -1,0 +1,16 @@
+title: /etc/ld.so.preload deleted
+id: 07fb0d4b-3c5b-5668-bcc0-341d2a54ee0d
+status: stable
+description: sigdiff generated rule (ld-preload-deleted).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_delete
+detection:
+  selection:
+    TargetFilename|equals: /etc/ld.so.preload
+  condition: selection
+level: high
+tags:
+- attack.T1546.006
+- attack.T1070

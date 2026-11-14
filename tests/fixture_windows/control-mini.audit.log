@@ -1,0 +1,11 @@
+type=SYSCALL msg=audit(1700000200.100:920): arch=c000003e syscall=59 success=yes exit=0 auid=1000 uid=1000 comm="ls" exe="/usr/bin/ls" key="sd"
+type=CWD msg=audit(1700000200.100:920): cwd="/tmp/sigdiff-lab/work"
+type=EXECVE msg=audit(1700000200.100:920): argc=2 a0="ls" a1="-la"
+type=PATH msg=audit(1700000200.100:920): item=0 name="/usr/bin/ls"
+type=SYSCALL msg=audit(1700000200.200:921): arch=c000003e syscall=257 success=yes exit=3 auid=1000 uid=1000 comm="bash" exe="/usr/bin/bash" key="sd"
+type=CWD msg=audit(1700000200.200:921): cwd="/tmp/sigdiff-lab/work"
+type=EXECVE msg=audit(1700000200.200:921): argc=3 a0="bash" a1="-c" a2="echo sigdiff > note.txt"
+type=PATH msg=audit(1700000200.200:921): item=0 name="/usr/bin/bash"
+type=SYSCALL msg=audit(1700000200.201:922): arch=c000003e syscall=257 success=yes exit=4 auid=1000 uid=1000 comm="bash" exe="/usr/bin/bash" key="sd"
+type=CWD msg=audit(1700000200.201:922): cwd="/tmp/sigdiff-lab/work"
+type=PATH msg=audit(1700000200.201:922): item=0 name="/tmp/sigdiff-lab/work/note.txt" nametype=CREATE

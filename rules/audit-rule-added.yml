@@ -1,0 +1,15 @@
+title: auditd rule added at runtime
+id: dc1a6483-336c-5f6d-9bce-b49e883bbcc4
+status: stable
+description: sigdiff generated rule (audit-rule-added).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  service: auditd
+detection:
+  sel_add:
+    op: add_rule
+  condition: sel_add
+level: low
+tags:
+- attack.T1562.001

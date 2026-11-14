@@ -1,0 +1,19 @@
+title: Host firewall rule inserted
+id: 589d8204-ac8f-5320-9128-b1a787f181c2
+status: stable
+description: sigdiff generated rule (firewall-rule-added).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: process_creation
+detection:
+  selection:
+    CommandLine|contains:
+    - iptables -I
+    - iptables -A
+    - nft add
+    - nft insert
+  condition: selection
+level: high
+tags:
+- attack.T1562.004

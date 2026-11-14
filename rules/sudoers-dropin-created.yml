@@ -1,0 +1,15 @@
+title: File created under /etc/sudoers.d
+id: 63a2142c-c5ad-537c-9b22-64f1672eb640
+status: stable
+description: sigdiff generated rule (sudoers-dropin-created).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_create
+detection:
+  selection:
+    TargetFilename|startswith: /etc/sudoers.d/
+  condition: selection
+level: high
+tags:
+- attack.T1548.003

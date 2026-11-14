@@ -1,0 +1,15 @@
+title: /etc/ld.so.preload written
+id: 10ad5de1-0cbb-57fc-82ac-43855232bc58
+status: stable
+description: sigdiff generated rule (ld-preload-modified).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_modify
+detection:
+  selection:
+    TargetFilename|equals: /etc/ld.so.preload
+  condition: selection
+level: high
+tags:
+- attack.T1546.006

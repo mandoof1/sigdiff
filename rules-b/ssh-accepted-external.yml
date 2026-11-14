@@ -1,0 +1,17 @@
+title: SSH login accepted from the TEST-NET lab range
+id: eb6d334b-f7ff-557c-8c90-3b310450e976
+status: stable
+description: sigdiff generated rule (ssh-accepted-external).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  service: sshd
+detection:
+  sel_ok:
+    Action: accepted
+  sel_net:
+    SourceIP|startswith: 203.0.113.
+  condition: sel_ok and sel_net
+level: high
+tags:
+- attack.T1078.004

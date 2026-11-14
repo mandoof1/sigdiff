@@ -1,0 +1,15 @@
+title: Lab log file deleted (local log tampering)
+id: bd849e28-bfa6-5ab9-bf30-9fdc12ff3e2a
+status: stable
+description: sigdiff generated rule (lab-log-deleted).
+author: Hadi Abdulrahman
+logsource:
+  product: linux
+  category: file_delete
+detection:
+  selection:
+    TargetFilename|startswith: /var/log/sigdiff-lab/
+  condition: selection
+level: high
+tags:
+- attack.T1070.002
