@@ -61,12 +61,10 @@ def test_two_rotations_anchor_in_second(tmp_path, monkeypatch):
 def test_anchor_rotated_away_is_over_inclusive(tmp_path, monkeypatch):
     cur = _mk(_chain(tmp_path, monkeypatch), "GONE")
     cap = Capture(workdir=str(tmp_path / "work"))
-    anchor_inode = cur.stat().st_ino
     cur.rename(tmp_path / "audit.log.1")
     _mk(cur, "new-era")
-    # pretend the anchor file aged out: delete it, a different-inode .1 remains
-    (tmp_path / "audit.log.1").unlink()
-    _mk(tmp_path / "audit.log.1", "older-still")
-    assert anchor_inode != (tmp_path / "audit.log.1").stat().st_ino
-    got = cap.read_audit_since((anchor_inode, 2))
-    assert got == "older-stillnew-era"  # honest best effort, never a silent head loss
+    # an anchor whose file aged out of num_logs: no chain member can carry an
+    # inode this far out of range, so the fallback is deterministic — every
+    # surviving rotation is read whole (over-inclusive, never a silent loss)
+    got = cap.read_audit_since((999999999999, 2))
+    assert got == "GONEnew-era"
