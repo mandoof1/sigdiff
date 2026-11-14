@@ -1,7 +1,8 @@
 # sigdiff — project state (queue item #3 of CYBER-PROJECTS-PLAN.md)
 
-Owner: Hadi Abdulrahman (mandoof1). Status: **built + live DoD evidence
-captured on this host; repo push pending.**
+Owner: Hadi Abdulrahman (mandoof1). Status: **shipped —
+`mandoof1/sigdiff` public, CI green, fresh-clone `sigdiff replay` = 58/58
+fired, exit 0 (2026-11-14). Queue item #4 (`netglass`) is next.**
 
 ## What exists and was actually run on this host (2026-11-14)
 
@@ -55,15 +56,17 @@ captured on this host; repo push pending.**
   when their expect-hits are missing from the captured window
   (techniques.yml: `allow_replay: true`, baseline records `attempts`).
 
-## Next commands (in order)
+## Next commands (all done 2026-11-14)
 
-1. `make assets` (vhs/asciinema/ffmpeg — tables already generated)
-2. `git init -b main && git add -A && git commit`
-3. `gh repo create sigdiff --public --source . --push`, add topics
-   (security, blue-team), `gh run list` until CI green
-4. fresh-clone smoke: `git clone` to /tmp, `pip install -e .`,
-   `sigdiff compile && sigdiff replay` (offline, must be exit 0)
-5. tick §3 of ~/CYBER-PROJECTS-PLAN.md row 3 and ~/projects/PROGRESS.md
+1. `make assets` — tables, GIFs, PNGs, cast regenerated ✓
+2. `git init && git add -A && git commit` ✓
+3. `gh repo create sigdiff --public --source . --push` + topics ✓,
+   CI green (run 43634039360 after the rotation-test fix) ✓
+4. fresh-clone smoke: clone to /tmp, `pip install -e .`,
+   `sigdiff compile && sigdiff replay` → 58 fired, exit 0 ✓
+5. §3 row 3 ticked, `~/projects/PROGRESS.md` updated ✓
+
+Project #4 `netglass` is next in the queue.
 
 ## Notes for the owner
 
